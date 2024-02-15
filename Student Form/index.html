@@ -1,0 +1,106 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Students Form by Rophile Khan</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 20px;
+        }
+
+        form {
+            max-width: 600px;
+            margin: 0 auto;
+        }
+
+        label {
+            display: block;
+            margin-bottom: 8px;
+        }
+
+        input, select {
+            width: 100%;
+            padding: 8px;
+            margin-bottom: 16px;
+            box-sizing: border-box;
+        }
+
+        button {
+            background-color: #4CAF50;
+            color: white;
+            padding: 10px 15px;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+        }
+
+        button:hover {
+            background-color: #45a049;
+        }
+    </style>
+</head>
+<body>
+    <form action="https://formsubmit.co/rophile.khan@gmail.com" method="POST">
+        <h2><i>Student Information Form By Rophile Khan</i></h2>
+
+        <!-- Personal Information -->
+        <label for="firstName">First Name:</label>
+        <input type="text" id="firstName" name="firstName" placeholder="Enter Your First Name" required>
+   
+        <br/>
+        <label for="lastName">Last Name:</label>
+        <input type="text" id="lastName" name="lastName" placeholder="Enter your Last Name" required>
+       
+        <br/>
+        <label for="Father'sName">Father's Name:</label>
+        <input type="text" id="FathersName" name="Father'sName" placeholder="Enter your Fathers Name" required>
+        
+        <br/>
+        <label for="nationalId">National ID (13 digits):</label>
+        <input type="text" id="nationalId" name="nationalId" title="Please enter a 13-digit numeric national ID" maxlength="13" placeholder="4210121212123"/>
+   
+        <br/>
+        <label for="gender">Gender:</label>
+        <select id="gender" name="gender" required>
+            <option value="male">Male</option>
+            <option value="female">Female</option>
+            <option value="other">Other</option>
+        </select>
+
+        <br/>
+        <label for="=YoursImage">Your's Image:</label>
+        <input type="file" id="myFile" name="filename" required>
+
+        <br/>
+        <label for="Date Of Birth">Date Of Birth:</label>
+        <input type="date" id="Date of birth" required>
+    
+        <br/>
+        <!-- Contact Information -->
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" placeholder="abc@gmail.com">
+        
+        <br/>
+        <label for="phone">Phone:</label>
+        <input type="number" id="phone" name="phone" maxlength="11" required placeholder="03123456789"/>
+        
+        <br/>
+        <!-- Academic Information -->
+        <label for="Last Qualification">Last Qualification:</label>
+        <input type="text" id="Last Qualification" name="Last Qualification" placeholder="Matriculation">
+        
+        <br/>
+        <!--Address-->
+        <label for="Complete Address">Complete Address:</label>
+        <input type="text" id="Address" name="Address" placeholder="House No-,Karachi">
+
+        <!-- Submit Button -->
+        <button type="submit">Submit</button>
+    </form>
+    
+    
+</body>
+</html>
